@@ -64,8 +64,6 @@ flutter:
   assets:
     - lib/assets/earth_map.jpg
     - lib/assets/undraw_gone_shopping_re_2lau.png
-    - lib/assets/uploads_files_4278121_Nike_Air_Shoes.glb
-    - lib/assets/nike_dunk_high_hawaii.glb
     - lib/assets/LogoNike.png
   #   - images/a_dot_ham.jpeg
 
