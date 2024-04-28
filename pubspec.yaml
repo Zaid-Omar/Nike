@@ -65,8 +65,20 @@ flutter:
     - lib/assets/earth_map.jpg
     - lib/assets/undraw_gone_shopping_re_2lau.png
     - lib/assets/LogoNike.png
+    - lib/assets/nike1.png
+    - lib/assets/nike2.png
+    - lib/assets/nike3.png
+    - lib/assets/nike4.png
+    - lib/assets/nike5.png
+    - lib/assets/nike6.png
+    - lib/assets/nike7.png
+    - lib/assets/nike8.png
+    - lib/assets/nike9.png
+    - lib/assets/nike10.png
+    - lib/assets/uploads_files_4278121_Nike_Air_Shoes.glb
+    - lib/assets/nike_dunk_high_hawaii.glb
+    - lib/assets/nike_air_jordan.glb
   #   - images/a_dot_ham.jpeg
-
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

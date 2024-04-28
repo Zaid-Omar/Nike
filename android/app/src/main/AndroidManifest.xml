@@ -14,7 +14,7 @@
         android:usesCleartextTraffic="true"
         android:label="projekt"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/nike">
         <activity
             android:name=".MainActivity"
             android:exported="true"

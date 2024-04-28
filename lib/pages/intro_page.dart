@@ -24,7 +24,7 @@ class _Intro_PageState extends State<Intro_Page> {
             child: Image.asset('lib/assets/LogoNike.png',width: 300,height: 300,),
           ),
           ),
-         const Text("Just Do It",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+         const Text("Just Do It",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 24),),
           const SizedBox(height: 24,),
          const Text("Brand new Sneakers and custom kicks made with Premium quality",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16,color: Colors.grey),textAlign: TextAlign.center,),
         const SizedBox(height: 150,),
@@ -44,7 +44,8 @@ class _Intro_PageState extends State<Intro_Page> {
                 width: 360,
            ),
          ),
-
+          SizedBox(height: 40,),
+          Text("Created By Zaid Omar",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),)
         ],
       ),
     );

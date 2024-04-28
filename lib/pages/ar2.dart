@@ -14,7 +14,7 @@ class _Ar2State extends State<Ar2> {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: ModelViewer(
-        src:'lib/assets/LogoNike.png',
+        src:'lib/assets/nike_air_jordan.glb',
         ar: true,
       ),
     );
