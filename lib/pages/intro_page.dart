@@ -12,7 +12,6 @@ class _Intro_PageState extends State<Intro_Page> {
 
   @override
   Widget build(BuildContext context) {
-    const mycolor = Color(0xFF353C69);
     return Scaffold(
       backgroundColor: Colors.grey[300],
       body: Column(

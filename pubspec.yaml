@@ -38,7 +38,7 @@ dependencies:
   arcore_flutter_plugin: ^0.1.0
   model_viewer_plus: ^1.7.2
   google_nav_bar: ^5.0.6
-
+  provider:
 dev_dependencies:
   flutter_test:
     sdk: flutter

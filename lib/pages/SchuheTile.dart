@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:projekt/pages/Entity/Schuhe.dart';
+import 'package:provider/provider.dart';
+
+import 'Entity/Cart.dart';
 
 class SchuheTile extends StatelessWidget {
   Schuhe schuhe;
@@ -33,12 +36,29 @@ class SchuheTile extends StatelessWidget {
                    Text(schuhe.preis, style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),),
                  ],
                ),
-               Container(
-                 padding: EdgeInsets.all(20),
-                 decoration: BoxDecoration(color: Colors.black,borderRadius: BorderRadius.only(topLeft: Radius.circular(12),bottomRight: Radius.circular(12))),
-
-                 child:Icon(Icons.add,color: Colors.white,),
+               InkWell(
+                 onTap: () {
+                   // Use Provider to access the existing instance of Cart
+                   var cart = Provider.of<Cart>(context, listen: false); // listen: false because we do not need to rebuild this widget on change
+                   cart.addItemFromCart(schuhe);
+                   ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                     content: Text('Item zum Warenkorb hinzugefügt'),
+                   ));
+                 },
+                 child: Container(
+                   padding: EdgeInsets.all(20),
+                   decoration: BoxDecoration(
+                     color: Colors.black,
+                     borderRadius: BorderRadius.only(
+                       topLeft: Radius.circular(12),
+                       bottomRight: Radius.circular(12),
+                     ),
+                   ),
+                   child: Icon(Icons.add, color: Colors.white),
+                 ),
                ),
+
+
              ],
            ),
          ),
