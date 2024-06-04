@@ -14,7 +14,8 @@ class _Intro_PageState extends State<Intro_Page> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[300],
-      body: Column(
+      body:SingleChildScrollView(
+        child:  Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Padding(padding: EdgeInsets.only(top: 10),
@@ -43,10 +44,12 @@ class _Intro_PageState extends State<Intro_Page> {
                 width: 360,
            ),
          ),
-          SizedBox(height: 40,),
+          SizedBox(height: 40),
           Text("Created By Zaid Omar",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.grey),)
         ],
+      ),
       ),
     );
   }
 }
+
